@@ -1,5 +1,6 @@
 /* === src/index.css === */
 /* === src/index.css === */
+/* === src/index.css === */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,8 @@
 }
 
 :root {
-    /* Background image of Mount Fuji (Fujiyama). Replace URL if needed. */
-    --bg-image-url: url('https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=2400&q=80');
+    /* Updated background image of Mount Fuji */
+    --bg-image-url: url('https://images.unsplash.com/photo-1526481280698-8fcc9a4b3d52?auto=format&fit=crop&w=2400&q=80');
 
     /* Legacy gradient tokens retained for components that still use them */
     --bg-grad-1: #fff7cc; /* light lemon */
