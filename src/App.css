@@ -1,12 +1,15 @@
 /* === src/App.css === */
+/* === src/App.css === */
 .App {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 50%, var(--bg-grad-3) 100%);
-    background-size: 200% 200%;
-    animation: gradientShift 20s ease-in-out infinite;
+    background-image: linear-gradient(135deg, rgba(17, 24, 39, 0.35), rgba(17, 24, 39, 0.5)), var(--bg-image-url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0b1220; /* fallback color */
 }
 
 .container {
@@ -111,6 +114,7 @@ h1 {
     }
 }
 
+/* Retained for potential future use, not applied now */
 @keyframes gradientShift {
     0% {
         background-position: 0% 50%;
@@ -125,8 +129,7 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
     .App {
-        animation: none;
-        background-size: auto;
+        background-attachment: scroll; /* ensure no parallax on reduced motion */
     }
     .custom-greeting {
         animation: none;

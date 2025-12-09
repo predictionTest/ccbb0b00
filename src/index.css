@@ -1,4 +1,5 @@
 /* === src/index.css === */
+/* === src/index.css === */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,10 @@
 }
 
 :root {
+    /* Background image of Mount Fuji (Fujiyama). Replace URL if needed. */
+    --bg-image-url: url('https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=2400&q=80');
+
+    /* Legacy gradient tokens retained for components that still use them */
     --bg-grad-1: #fff7cc; /* light lemon */
     --bg-grad-2: #ffe066; /* sunny yellow */
     --bg-grad-3: #f6c445; /* golden */
@@ -36,7 +41,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--text-dark);
-    background-color: #fffdfa;
+    background-color: #0b1220; /* fallback behind the hero image */
 }
 
 code {
