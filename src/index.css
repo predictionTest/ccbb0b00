@@ -1,6 +1,7 @@
 /* === src/index.css === */
 /* === src/index.css === */
 /* === src/index.css === */
+/* === src/index.css === */
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +9,21 @@
 }
 
 :root {
-    /* Updated background image of Mount Fuji */
-    --bg-image-url: url('https://images.unsplash.com/photo-1526481280698-8fcc9a4b3d52?auto=format&fit=crop&w=2400&q=80');
+    /* Sunset over ocean background */
+    --bg-image-url: url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=2400&q=80');
 
     /* Legacy gradient tokens retained for components that still use them */
-    --bg-grad-1: #fff7cc; /* light lemon */
-    --bg-grad-2: #ffe066; /* sunny yellow */
-    --bg-grad-3: #f6c445; /* golden */
+    --bg-grad-1: #ffe7d9; /* warm peach */
+    --bg-grad-2: #ffb4a2; /* coral */
+    --bg-grad-3: #ff6a88; /* sunset pink */
 
-    --accent-100: #fef3c7;
-    --accent-300: #fcd34d;
-    --accent-500: #f59e0b;
-    --accent-600: #d97706;
+    --accent-100: #ffe4d6; /* soft peach */
+    --accent-300: #ffb4a2; /* coral light */
+    --accent-500: #ff7a59; /* vivid coral */
+    --accent-600: #e35d3b; /* deep sunset */
 
-    --btn-grad-start: #ffdf6e;
-    --btn-grad-end: #f6b73c;
+    --btn-grad-start: #ff9a8b; /* peach */
+    --btn-grad-end: #ff6a88;   /* pink */
 
     --text-dark: #1f2937;
     --text-darker: #111827;
@@ -42,7 +43,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--text-dark);
-    background-color: #0b1220; /* fallback behind the hero image */
+    background-color: #0a1324; /* fallback behind the hero image */
 }
 
 code {
@@ -51,7 +52,7 @@ code {
 }
 
 :focus-visible {
-    outline: 3px solid rgba(217, 119, 6, 0.6);
+    outline: 3px solid rgba(227, 93, 59, 0.6);
     outline-offset: 2px;
 }
 
