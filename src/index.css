@@ -1,7 +1,31 @@
+/* === src/index.css === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --bg-grad-1: #fff7cc; /* light lemon */
+    --bg-grad-2: #ffe066; /* sunny yellow */
+    --bg-grad-3: #f6c445; /* golden */
+
+    --accent-100: #fef3c7;
+    --accent-300: #fcd34d;
+    --accent-500: #f59e0b;
+    --accent-600: #d97706;
+
+    --btn-grad-start: #ffdf6e;
+    --btn-grad-end: #f6b73c;
+
+    --text-dark: #1f2937;
+    --text-darker: #111827;
+    --surface: #ffffff;
+}
+
+::selection {
+    background: var(--accent-300);
+    color: var(--text-darker);
 }
 
 body {
@@ -11,9 +35,28 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: var(--text-dark);
+    background-color: #fffdfa;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(217, 119, 6, 0.6);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
